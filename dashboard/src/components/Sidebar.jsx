@@ -8,18 +8,20 @@ import {
   Toolbar,
 } from "@mui/material";
 import { NavLink } from "react-router-dom";
+
 import HomeIcon from "@mui/icons-material/Home";
+import ReportProblemIcon from "@mui/icons-material/ReportProblem";
+import RateReviewIcon from "@mui/icons-material/RateReview"; // Changed Feedback icon
 import InfoIcon from "@mui/icons-material/Info";
-import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import HelpIcon from "@mui/icons-material/Help";
-import FeedbackIcon from "@mui/icons-material/Feedback";
-import BuildIcon from "@mui/icons-material/Build"; // 🔧 Maintenance Icon
+import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+
 import logo from "../assets/logo.png";
 
 const menuItems = [
   { text: "Home", icon: <HomeIcon />, path: "/" },
-  { text: "Feedback", icon: <FeedbackIcon />, path: "/feedback" },
-  { text: "Maintainance", icon: <BuildIcon />, path: "/maintainance" }, // ✅ Added
+  { text: "Incident Report", icon: <ReportProblemIcon />, path: "/incident-report" },
+  { text: "Feedback", icon: <RateReviewIcon />, path: "/feedback" }, // Updated icon here
   { text: "About Us", icon: <InfoIcon />, path: "/about-us" },
   { text: "Support and Help", icon: <HelpIcon />, path: "/support-help" },
   { text: "Logout", icon: <ExitToAppIcon />, path: "/logout" },

@@ -7,10 +7,7 @@ import {
   Grid,
   MenuItem,
   Paper,
-  InputAdornment,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails
+  InputAdornment
 } from '@mui/material';
 import {
   Search,
@@ -18,16 +15,8 @@ import {
   Email,
   AccessTime,
   Room,
-  ExpandMore,
   AttachFile
 } from '@mui/icons-material';
-
-const faqList = [
-  { question: 'How do I assign a vehicle?', answer: 'Go to Assign Vehicle and select driver and vehicle.' },
-  { question: 'How to release a booking?', answer: 'Navigate to Release Booking and choose the one to release.' },
-  { question: 'How can I add a new driver?', answer: 'Use the Add Driver tab in the sidebar and fill in the form.' },
-  { question: 'What should I do if I face technical issues?', answer: 'Submit a ticket or contact support via phone or email.' }
-];
 
 const SupportHelp = () => {
   return (
@@ -35,7 +24,7 @@ const SupportHelp = () => {
       {/* Top Banner */}
       <Box
         sx={{
-          backgroundColor: '#1565C0', 
+          backgroundColor: '#1565C0',
           borderRadius: 2,
           p: 4,
           mb: 4,
@@ -47,7 +36,7 @@ const SupportHelp = () => {
           Support & Help Center
         </Typography>
         <Typography variant="body1" gutterBottom>
-           Find answers or chat with us.
+          Find answers or chat with us.
         </Typography>
         <Box mt={2} maxWidth="500px" mx="auto">
           <TextField
@@ -67,23 +56,6 @@ const SupportHelp = () => {
             }}
           />
         </Box>
-      </Box>
-
-      {/* FAQ */}
-      <Box mb={4}>
-        <Typography variant="h6" gutterBottom fontWeight="bold">
-          Frequently Asked Questions
-        </Typography>
-        {faqList.map((faq, index) => (
-          <Accordion key={index}>
-            <AccordionSummary expandIcon={<ExpandMore />}>
-              <Typography>{faq.question}</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>{faq.answer}</Typography>
-            </AccordionDetails>
-          </Accordion>
-        ))}
       </Box>
 
       {/* Support Ticket Form */}
