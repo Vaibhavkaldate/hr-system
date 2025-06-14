@@ -11,7 +11,7 @@ import { NavLink } from "react-router-dom";
 
 import HomeIcon from "@mui/icons-material/Home";
 import ReportProblemIcon from "@mui/icons-material/ReportProblem";
-import RateReviewIcon from "@mui/icons-material/RateReview"; // Changed Feedback icon
+import RateReviewIcon from "@mui/icons-material/RateReview"; 
 import InfoIcon from "@mui/icons-material/Info";
 import HelpIcon from "@mui/icons-material/Help";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
@@ -21,7 +21,7 @@ import logo from "../assets/logo.png";
 const menuItems = [
   { text: "Home", icon: <HomeIcon />, path: "/" },
   { text: "Incident Report", icon: <ReportProblemIcon />, path: "/incident-report" },
-  { text: "Feedback", icon: <RateReviewIcon />, path: "/feedback" }, // Updated icon here
+  { text: "Feedback", icon: <RateReviewIcon />, path: "/feedback" }, 
   { text: "About Us", icon: <InfoIcon />, path: "/about-us" },
   { text: "Support and Help", icon: <HelpIcon />, path: "/support-help" },
   { text: "Logout", icon: <ExitToAppIcon />, path: "/logout" },
